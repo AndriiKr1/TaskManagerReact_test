@@ -45,13 +45,13 @@ const TaskList = () => {
     <div>
       <h1>Task List</h1>
       <AddTask onAddTask={addTask} />
-      {/* Фільтри */}
+    
       <div className="filter-buttons">
         <button onClick={() => setFilter("all")}>All</button>
         <button onClick={() => setFilter("active")}>Active</button>
         <button onClick={() => setFilter("completed")}>Completed</button>
       </div>
-      {/* Список завдань */}
+      
       <ul>
         {filteredTasks.map((task) => (
           <li key={task.id}>
